@@ -1,7 +1,7 @@
 import React from "react";
 
 const AddTrips = () => {
-    return <div></div>;
+    return <div>AddTrips</div>;
 };
 
 export default AddTrips;

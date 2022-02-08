@@ -1,4 +1,14 @@
+.mainBox {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
 .sidebar {
+    flex-basis: 20%;
+    background-color: aqua;
 }
 .routes {
+    flex-basis: 80%;
+    background-color: blueviolet;
 }

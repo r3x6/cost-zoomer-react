@@ -8,6 +8,13 @@ import TopBar from "./TopBar";
 import Login from "./Login";
 import Main from "./Main";
 
+import CostEstimator from "./main/CostEstimator";
+import Overview from "./main/Overview";
+import CostBreakdowns from "./main/CostBreakdowns";
+import MyTrips from "./main/MyTrips";
+import AddTrips from "./main/AddTrips";
+import Settings from "./main/Settings";
+
 const Dashboard = () => {
     // ALLOWS REDUX STORE TO BE ACCESSED
 
@@ -43,7 +50,7 @@ const Dashboard = () => {
     return (
         <div className={styles.container}>
             <div className={styles.topBar}>
-                <TopBar></TopBar>
+                <TopBar />
             </div>
             {/* PARTS THAT CHANGE WITH THE PAGES, ANYTHING U WANNA KEEP STATIC PUT OUTSIDE */}
             <div className={styles.main}>
@@ -53,7 +60,11 @@ const Dashboard = () => {
                         element={<Navigate replace to="/login" />}
                     />
                     <Route path="/login" element={<Login />} />
-                    <Route path="/main" element={<Main />} />
+                    <Route
+                        path="/publicestimator"
+                        element={<CostEstimator />}
+                    />
+                    <Route path="/main/*" element={<Main />} />
                 </Routes>
                 {/* IN OTHER PAGES, USE NAVLINK TO ANY OF THESE SET ROUTES */}
             </div>

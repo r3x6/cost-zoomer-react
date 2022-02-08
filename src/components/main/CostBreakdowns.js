@@ -1,7 +1,7 @@
 import React from "react";
 
 const CostBreakdowns = () => {
-    return <div></div>;
+    return <div>CostBreakdowns</div>;
 };
 
 export default CostBreakdowns;

@@ -1,7 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const TopBar = () => {
-    return <div></div>;
+    const navigate = useNavigate();
+
+    return (
+        <div>
+            <button
+                onClick={() => {
+                    navigate("/publicestimator");
+                }}
+            >
+                ESTIMATE!
+            </button>
+        </div>
+    );
 };
 
 export default TopBar;
