@@ -16,6 +16,16 @@ const Login = () => {
             >
                 LOGIN
             </button>
+            <br />
+            <br />
+            <h2>If you're a new user, sign up for a new account!</h2>
+            <button
+                onClick={() => {
+                    navigate(`/signup`);
+                }}
+            >
+                SIGNUP
+            </button>
         </div>
     );
 };

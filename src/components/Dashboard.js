@@ -7,6 +7,7 @@ import styles from "./Dashboard.module.css";
 import TopBar from "./TopBar";
 import Login from "./Login";
 import Main from "./Main";
+import Signup from "./Signup";
 
 import CostEstimator from "./main/CostEstimator";
 import Overview from "./main/Overview";
@@ -60,6 +61,7 @@ const Dashboard = () => {
                         element={<Navigate replace to="/login" />}
                     />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<Signup />} />
                     <Route
                         path="/publicestimator"
                         element={<CostEstimator />}
