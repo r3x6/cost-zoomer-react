@@ -59,9 +59,9 @@ const AddTrips = () => {
 
     const handleChangeTiming = (e) => {
         console.log(new Date(e));
+        console.log(e);
         const timing = e;
         dispatch(addTripsActions.changeTiming(timing));
-        console.log(storeTripTiming);
     };
 
     const handleChangeDist = (e) => {
@@ -99,6 +99,7 @@ const AddTrips = () => {
             app: storeTripApp,
             cost: storeTripCost,
         };
+        console.log(payload);
         const res = await fetch(`http://localhost:5000/newtrip`, {
             method: "POST",
             headers: {
@@ -109,7 +110,7 @@ const AddTrips = () => {
         console.log(`Status: ${res.status}, trip added.`);
         const data = await res.json();
         console.log(data.message);
-        window.location.reload(false);
+        // window.location.reload(false);
     };
 
     return (

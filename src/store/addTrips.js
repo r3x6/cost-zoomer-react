@@ -4,7 +4,7 @@ const addTripsSlice = createSlice({
     name: "addTrips",
     initialState: {
         // INPUT STATES REQUIRED FOR THIS PAGE
-        tripTiming: new Date(),
+        tripTiming: "",
         tripDist: "",
         tripWaitTime: "",
         tripApp: "",

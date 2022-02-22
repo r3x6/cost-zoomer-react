@@ -77,32 +77,34 @@ const Signup = () => {
     };
 
     return (
-        <div className={style.signup}>
-            <h1>Sign Up</h1>
-            <form onSubmit={handleNewReg}>
-                <input
-                    placeholder="Name"
-                    name="name"
-                    onChange={handleChangeRegName}
-                />
-                <input
-                    placeholder="Email"
-                    name="email"
-                    onChange={handleChangeRegEmail}
-                />
-                <input
-                    placeholder="Password"
-                    name="password"
-                    onChange={handleChangeRegPassword}
-                />
-                <input
-                    placeholder="Re-type Password"
-                    name="password2"
-                    onChange={handleChangeRegPassword2}
-                />
-                <br />
-                <button type="submit">Confirm</button>
-            </form>
+        <div className={style.signupWrapper}>
+            <div className={style.signup}>
+                <h1>Sign Up</h1>
+                <form onSubmit={handleNewReg}>
+                    <input
+                        placeholder="Name"
+                        name="name"
+                        onChange={handleChangeRegName}
+                    />
+                    <input
+                        placeholder="Email"
+                        name="email"
+                        onChange={handleChangeRegEmail}
+                    />
+                    <input
+                        placeholder="Password"
+                        name="password"
+                        onChange={handleChangeRegPassword}
+                    />
+                    <input
+                        placeholder="Re-type Password"
+                        name="password2"
+                        onChange={handleChangeRegPassword2}
+                    />
+                    <br />
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
         </div>
     );
 };

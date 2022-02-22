@@ -1,6 +1,17 @@
 .signup {
-    margin: 10%;
+    padding: 10%;
+    height: 100%;
+    background-color: rgba(163, 206, 255, 0.9);
 }
 input {
     display: block;
+}
+.signupWrapper {
+    float: none;
+    min-height: 1px;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../public/background.jpeg");
+    background-size: cover;
+    position: relative;
 }
