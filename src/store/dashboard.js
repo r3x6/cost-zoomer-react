@@ -4,13 +4,13 @@ const dashboardSlice = createSlice({
     name: "dashboard",
     initialState: {
         // INPUT STATES REQUIRED FOR THIS PAGE
-        // stateName : value
+        authState: false,
     },
     reducers: {
         // PUT REDUCERS FOR THIS PAGE HERE
-        // reducerName(state, action) {
-        //   state.stateName = action.payload;
-        // },
+        updateAuthState(state, action) {
+            state.authState = action.payload;
+        },
     },
 });
 

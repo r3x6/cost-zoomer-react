@@ -1,0 +1,30 @@
+.myTrips {
+}
+
+.table {
+    border-collapse: collapse;
+    width: 80%;
+    font-size: ;
+}
+
+.table td,
+.table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: rgba(242, 242, 242, 0.5);
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(73, 88, 103);
+    color: white;
+}

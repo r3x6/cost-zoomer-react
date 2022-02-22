@@ -1,0 +1,15 @@
+.topBar {
+    background-color: #bdd5ea;
+    float: none;
+    min-width: 1px;
+    height: 100%;
+}
+.logo {
+    float: none;
+    min-height: 1px;
+    background-image: url("../../public/costzoomer_logo.jpg");
+    background-size: 12%;
+    border: none;
+    height: 100%;
+    width: 100%;
+}

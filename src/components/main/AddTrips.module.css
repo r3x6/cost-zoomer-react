@@ -1,0 +1,9 @@
+.addtrips {
+}
+.dateTime input {
+    display: inline;
+    width: fit-content;
+}
+.dateTime {
+    background-color: white;
+}

@@ -52,6 +52,7 @@ const Sidebar = () => {
             </button>
             <button
                 onClick={() => {
+                    localStorage.clear();
                     navigate(`/`);
                 }}
             >

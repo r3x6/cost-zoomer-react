@@ -16,15 +16,23 @@ const Main = () => {
             <div className={styles.sidebar}>
                 <Sidebar />
             </div>
-            <div className={styles.routes}>
-                <Routes>
-                    <Route path="/" element={<Overview />} />
-                    <Route path="estimatecost" element={<CostEstimator />} />
-                    <Route path="costbreakdowns" element={<CostBreakdowns />} />
-                    <Route path="mytrips" element={<MyTrips />} />
-                    <Route path="addtrips" element={<AddTrips />} />
-                    <Route path="settings" element={<Settings />} />
-                </Routes>
+            <div className={styles.routesWrapper}>
+                <div className={styles.routes}>
+                    <Routes>
+                        <Route path="/" element={<Overview />} />
+                        <Route
+                            path="estimatecost"
+                            element={<CostEstimator />}
+                        />
+                        <Route
+                            path="costbreakdowns"
+                            element={<CostBreakdowns />}
+                        />
+                        <Route path="mytrips" element={<MyTrips />} />
+                        <Route path="addtrips" element={<AddTrips />} />
+                        <Route path="settings" element={<Settings />} />
+                    </Routes>
+                </div>
             </div>
         </div>
     );

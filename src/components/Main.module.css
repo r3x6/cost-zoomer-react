@@ -6,9 +6,21 @@
 
 .sidebar {
     flex-basis: 20%;
-    background-color: aqua;
+    background-color: #577399;
 }
 .routes {
     flex-basis: 80%;
-    background-color: blueviolet;
+    height: 100%;
+    background-color: rgba(244, 157, 55, 0.767);
+    padding: 10% 0 0 10%;
+}
+
+.routesWrapper {
+    float: none;
+    min-height: 1px;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../public/background.jpeg");
+    background-size: cover;
+    position: relative;
 }
